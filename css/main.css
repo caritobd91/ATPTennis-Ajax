@@ -1,0 +1,15 @@
+.container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+   
+}
+
+.box {
+    border-radius: 3px;
+    background-color: cornflowerblue;
+    margin: 20px;
+    flex-basis: 300px;
+
+}
