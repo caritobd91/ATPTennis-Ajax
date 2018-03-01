@@ -3,7 +3,10 @@ $(document).ready(function(){
     $.getJSON(
         apiUrl,
         function(data){
-            console.log(data);
+            var rankings = data.records;
+            rankings.forEach(function(element){
+                console.log(element.fields);
+            });
         }
     );
 });
