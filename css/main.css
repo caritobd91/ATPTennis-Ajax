@@ -13,3 +13,12 @@
     flex-basis: 300px;
 
 }
+
+.player-number {
+    color: purple;
+    background-color: white;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}

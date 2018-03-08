@@ -4,9 +4,24 @@ $(document).ready(function(){
         apiUrl,
         function(data){
             var rankings = data.records;
+            //Loops through the top 10 rankings
             rankings.forEach(function(element){
-                console.log(element.fields);
+                var fields = element.fields;
+                var html = buildHtml(fields);
+                $(".container").append(html);    
             });
         }
     );
+
+    function buildHtml(ranking){
+        console.log(ranking);
+        return `<div class='box box1'>
+        <div class="player-number">${ranking.current_rank}</div> - <div>${ranking.player_name}</div>
+        </br>
+        <div>${ranking.player_country}</div>
+        
+        
+        
+        </div>`;
+    }
 });
