@@ -15,10 +15,12 @@ $(document).ready(function(){
 
     function buildHtml(ranking){
         console.log(ranking);
-        return `<div class='box box1'>
-        <div><div class="player-number">${ranking.current_rank}</div> - <span>${ranking.player_name}</span></div>
+        return `<div class='box'>
+        <div><div class="player-number">${ranking.current_rank}</div> <span class="player-name">${ranking.player_name}</span></div>
         </br>
         <div>${ranking.player_country}</div>
+        </br>
+        <div>${ranking.player_points}</div>
         
         
         

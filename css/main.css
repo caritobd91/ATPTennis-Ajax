@@ -1,25 +1,38 @@
+body {
+    background-image: url("../img/tennis-img.jpg");
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
 .container {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
-    height: 300px;
-   
 }
 
 .box {
     border-radius: 3px;
-    background-color: cornflowerblue;
+    background-color: rgba(227, 241, 252, 0.8);
     margin: 20px;
-    flex-basis: 300px;
+    flex-basis: 360px;
+    text-align: center;
+    padding: 25px;
+    font-size: large;
 
 }
 
 .player-number {
     display: inline-block;
-    color: purple;
+    color: crimson;
     background-color: white;
-    border-radius: 20px;
-    width: 20px;
-    height: 20px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
     text-align: center;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.player-name {
+    text-transform: uppercase;
+    font-weight: bolder;
 }
